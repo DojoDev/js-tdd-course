@@ -1,0 +1,25 @@
+{
+  "name": "js-td-course",
+  "version": "1.0.0",
+  "description": "Library the course of JS if TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DojoDev/js-tdd-course.git"
+  },
+  "keywords": [
+    "JS",
+    "Nodejs",
+    "TDD",
+    "ES6"
+  ],
+  "author": "Raffael Nunes <hello@raffelnunes.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DojoDev/js-tdd-course/issues"
+  },
+  "homepage": "https://github.com/DojoDev/js-tdd-course#readme"
+}
