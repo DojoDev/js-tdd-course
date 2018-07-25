@@ -4,7 +4,8 @@
   "description": "Library the course of JS if TDD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node_modules/.bin/eslint src/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/DojoDev/js-tdd-course/issues"
   },
-  "homepage": "https://github.com/DojoDev/js-tdd-course#readme"
+  "homepage": "https://github.com/DojoDev/js-tdd-course#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-rallycoding": "^3.2.0",
+    "eslint-plugin-import": "^2.13.0"
+  }
 }
