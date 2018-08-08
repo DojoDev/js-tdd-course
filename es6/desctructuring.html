@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>This no Arrow Funcion</title>
+</head>
+<body>
+    <h1> Carros Antigos da
+        <span id="brand"></span>
+    </h1>
+    <ul>
+        <li>
+            <strong> Nome:</strong>
+            <span id="car"></span>
+        </li>
+        <li>
+            <strong>Cor:</strong>
+            <span id="color"></span>
+        </li>
+        <li>
+            <strong> Ano:</strong>
+            <span id="year"></span>
+        </li>
+        <li>
+            <strong> Portas:</strong>
+            <span id="doors"></span>
+        </li>
+    </ul>
+    <hr>
+    <script>
+        const cars =
+        {
+            name: "Beetle",
+            color: "White",
+            year: 1079,
+            brand: {
+                brand: "Wolks"
+            }
+        }
+        const {name, color, year} = cars;
+        const { brand } = cars.brand;
+        const { doors = 2 } = cars;
+        setTimeout(() => {
+            document.getElementById("car").innerHTML = name;
+            document.getElementById("color").innerHTML = color;
+            document.getElementById("year").innerHTML = year;
+            document.getElementById("brand").innerHTML = brand;
+            document.getElementById("doors").innerHTML = doors;
+        }, 500)
+    </script>
+</body>
+</html>

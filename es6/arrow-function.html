@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow Fuctions</title>
+</head>
+<body>
+<script>
+const cars = ['fusca','mustang','dodge'];
+
+const oldCars= cars.map(function(car){
+    return `I have a ${car}`;
+})
+
+const arrowOldCarsSingle= cars.map((car)=>{
+    return `I'm have a ${car}`;
+})
+
+const arrowOldCarsOneLine = cars.map(car=> `I have a ${car}`);
+
+const iLoveOldCars = cars
+.filter(car => car === 'fusca')
+.map(car=>`I love Old Cars like ${car}`)
+
+console.log(iLoveOldCars);
+</script>
+</body>
+</html>
